@@ -5,6 +5,7 @@
 def dedupe(items, key=None):
     seen = set()
     for item in items:
+        # print(item)
         val = item if key is None else key(item)
         if val not in seen:
             yield item
@@ -19,5 +20,5 @@ if __name__ == '__main__':
         {'x': 10, 'y': 15}
         ]
     print(a)
-    print(list(dedupe(a, key=lambda a: (a['x'],a['y']))))
+    print(list(dedupe(a, key=lambda x: (x['x'],x['y']))))
 
