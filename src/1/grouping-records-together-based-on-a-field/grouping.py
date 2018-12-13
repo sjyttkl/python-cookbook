@@ -22,7 +22,7 @@ from collections import defaultdict
 rows_by_date = defaultdict(list)
 for row in rows:
     rows_by_date[row['date']].append(row)
-
+# print(rows_by_date)
 for r in rows_by_date['07/01/2012']:
     print(r)
 
