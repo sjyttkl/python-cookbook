@@ -16,6 +16,8 @@ print(len(s1), len(s2))
 
 # (c) Normalize and try the same experiment
 import unicodedata
+# 此模块提供对Unicode字符数据库的访问，该字符数据库为所有Unicode字符定义字符属性。
+# 该数据库中的数据基于 UnicodeData.txt 可从ftp://ftp.unicode.org/公开获得的文件版本5.2.0。
 
 n_s1 = unicodedata.normalize('NFC', s1)
 n_s2 = unicodedata.normalize('NFC', s2)
