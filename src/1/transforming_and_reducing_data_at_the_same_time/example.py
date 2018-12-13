@@ -3,6 +3,7 @@
 # Some examples of using generators in arguments
 
 import os
+print(os.path.expanduser('~'))#拿到用户路径：C:\Users\songdongdong
 files = os.listdir(os.path.expanduser('~'))
 if any(name.endswith('.py') for name in files):
     print('There be python!')
