@@ -25,9 +25,3 @@ for row in rows:
 # print(rows_by_date)
 for r in rows_by_date['07/01/2012']:
     print(r)
-
-
-    
-
-
-
