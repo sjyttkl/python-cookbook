@@ -19,9 +19,9 @@ def daterange(start, stop, step):
         yield start
         start += step
 
-for d in daterange(date(2012, 8, 1), date(2012, 8, 11), timedelta(days=1)):
+for d in daterange(date(2018, 1, 1), date(2018, 12, 11), timedelta(days=1)):
     print(d)
 
-for d in daterange(datetime(2012, 8, 1), datetime(2012, 8, 3), timedelta(minutes=30)):
+for d in daterange(datetime(2018, 1, 1), datetime(2018, 12, 3), timedelta(minutes=30)):
     print(d)
 
