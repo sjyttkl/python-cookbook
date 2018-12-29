@@ -13,3 +13,4 @@ def get_previous_byday(dayname, start_date=None):
     target_date = start_date - timedelta(days=days_ago)
     return target_date
 
+print(get_previous_byday('Monday'))
